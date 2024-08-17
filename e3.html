@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e-Learn Computer Education</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lora:wght@400;700&display=swap">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f0f4f8; /* Very light contrast color */
+            color: #333; /* Dark text color */
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        header {
+            background-color: #004d00; /* Dark green */
+            color: white;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            text-align: center;
+            border-bottom: 2px solid #009688; /* Teal green border */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        header img.logo {
+            height: 60px;
+            margin-right: 20px;
+            position: absolute;
+            left: 20px;
+        }
+
+        header img.rsdca {
+            height: 60px; /* Adjust height as needed */
+            position: absolute;
+            right: 20px;
+            top: 20px;
+        }
+
+        header div {
+            display: inline-block;
+        }
+
+        header h1, header h2 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #e0f2f1; /* Light teal */
+        }
+
+        header h2 {
+            font-size: 1.2em;
+            font-style: italic;
+            color: #b2dfdb; /* Slightly lighter teal */
+        }
+
+        section {
+            padding: 40px;
+            background-color: #ffffff; /* White background for specific sections */
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            max-width: 1200px;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        section:hover {
+            transform: scale(1.02);
+        }
+
+        .about-us, .courses, .gov-info, .contact {
+            margin-bottom: 40px;
+        }
+
+        .contact {
+            background-color: #fafafa; /* Light gray background for contact section */
+            padding: 40px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .contact ul li {
+            margin: 15px 0;
+        }
+
+        .contact a {
+            color: #004d00;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .social-icons {
+            margin-top: 20px;
+        }
+
+        .social-icons img {
+            height: 40px;
+            margin-right: 15px;
+            vertical-align: middle;
+        }
+
+        h2 {
+            font-family: 'Lora', serif;
+            font-weight: 700;
+        }
+
+        .gov-info {
+            text-align: center;
+        }
+
+        .gov-info img {
+            width: 150px; /* Adjust width as needed */
+            margin: 20px 0;
+        }
+
+        .cookie-consent {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            transform: translateY(100%);
+            transition: transform 0.5s ease-in-out;
+            z-index: 1000;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .cookie-consent.show {
+            transform: translateY(0);
+        }
+
+        .cookie-consent button {
+            background-color: #4caf50; /* Green button */
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-left: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .cookie-consent button:hover {
+            background-color: #45a049; /* Darker green on hover */
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="elogo.png" alt="e-Learn Logo" class="logo">
+        <img src="rsdca.jpg" alt="RS DCA" class="rsdca">
+        <div>
+            <h1>e-Learn Computer Education</h1>
+            <h2>...enlighten your career</h2>
+        </div>
+    </header>
+
+    <section class="about-us">
+        <h2>About Us</h2>
+        <p>Welcome to e-Learn Computer Education, where we are dedicated to providing high-quality computer and technical education. Located in Suchindrum, Kanyakumari District, we offer a range of courses tailored to meet the needs of students from various academic backgrounds.</p>
+        <p>Our mission is to empower students with the skills they need to succeed in their careers. Whether you're a school or college student, or a professional looking to enhance your technical knowledge, we have the right course for you.</p>
+    </section>
+
+    <section class="courses">
+        <h2>Courses Offered</h2>
+        <p>We offer specialized batches for school and college students:</p>
+        <ul>
+            <li>MS Office</li>
+            <li>Tally Prime</li>
+            <li>Python</li>
+            <li>Java (Spring Boot)</li>
+            <li>Web Design (HTML, CSS, Bootstrap, JavaScript, Node.js)</li>
+            <li>Photoshop</li>
+            <li>InDesign</li>
+            <li>Illustrator</li>
+        </ul>
+        <p>Additionally, we provide courses to elevate the design and technical knowledge for ITI, Diploma, and Engineering students (Mechanical, Civil, ECE, EEE):</p>
+        <ul>
+            <li>AutoCAD</li>
+            <li>Creo</li>
+            <li>SolidWorks</li>
+            <li>Catia</li>
+            <li>Inventor</li>
+            <li>NX CAD</li>
+        </ul>
+    </section>
+
+    <section class="gov-info">
+        <h2>Government Accredited Certificates</h2>
+        <p>We offer valuable Government of India accredited course certificates for just ₹1000. This certification adds significant value to your skills and qualifications, recognized nationwide.</p>
+        <img src="gov.jpg" alt="Government of India Accredited Certificate">
+    </section>
+
+    <section class="contact">
+        <h2>Contact Us</h2>
+        <ul>
+            <li><strong>Address:</strong> Nangai Nagar, Kanyakumari Road, Akkarai, Suchindrum</li>
+            <li><strong>Mobile:</strong> <a href="tel:+919791700955">+91 97917 00955</a></li>
+            <li><strong>Email:</strong> <a href="mailto:elearntrust@gmail.com">elearntrust@gmail.com</a></li>
+        </ul>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/elearn_trust?igsh=MWhpNWV1MWhpYWRzbQ==" target="_blank">
+                <img src="igramsymbol.jpg" alt="Instagram">
+            </a>
+            <a href="https://wa.me/919791700955" target="_blank">
+                <img src="wasy.jpg" alt="WhatsApp">
+            </a>
+        </div>
+    </section>
+
+    <div class="cookie-consent" id="cookieConsent">
+        <p>This site uses cookies to create a better experience for you. Some of these cookies are set automatically because they’re necessary for the site to perform. Other cookies are used for functional, performance, and targeting purposes to enhance your experience by personalizing content and ads, enabling third-party content and features, and enabling us to analyze how this site is used. To learn more or to manage cookies at any time, select the "Cookie Settings" button.</p>
+        <p>By clicking "I Accept", you are agreeing to our use of functional, performance and targeting cookies.</p>
+        <button onclick="acceptCookies()">I Accept</button>
+    </div>
+
+    <script>
+        window.onload = function() {
+            document.getElementById('cookieConsent').classList.add('show');
+        };
+
+        function acceptCookies() {
+            document.getElementById('cookieConsent').classList.remove('show');
+        }
+    </script>
+</body>
+</html>
